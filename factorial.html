@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function factorial(input) {
+      if (input == 0) {
+        return 1;
+      } else {
+        return input * (input - 1);
+      }
+    }
+
+    const num = prompt("masukan bilangan bulat positif:", "");
+    if (num >= 0) {
+      const result = factorial(num);
+      console.log(`hasil dari faktorial ${num} adalah ${result}`);
+    } else {
+      console.log("masukan bilangan bulat positif!!");
+    }
+  </script>
+</html>
